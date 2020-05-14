@@ -133,8 +133,6 @@ Optimizing module buttontoled.
 
 2.8. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \buttontoled..
-Removed 0 unused cells and 1 unused wires.
-<suppressed ~1 debug messages>
 
 2.9. Executing CHECK pass (checking for obvious problems).
 checking module buttontoled..
@@ -391,9 +389,7 @@ Generating RTLIL representation for module `\_80_ice40_alu'.
 Successfully finished Verilog frontend.
 
 2.31.3. Continuing TECHMAP pass.
-Using extmapper simplemap for cells of type $logic_not.
 No more expansions possible.
-<suppressed ~1 debug messages>
 
 2.32. Executing OPT pass (performing simple optimizations).
 
@@ -519,40 +515,8 @@ No more expansions possible.
 2.43. Executing ABC pass (technology mapping using ABC).
 
 2.43.1. Extracting gate netlist of module `\buttontoled' to `<abc-temp-dir>/input.blif'..
-Extracted 1 gates and 2 wires to a netlist network with 1 inputs and 1 outputs.
-
-2.43.1.1. Executing ABC.
-Running ABC command: <yosys-exe-dir>/yosys-abc -s -f <abc-temp-dir>/abc.script 2>&1
-ABC: ABC command line: "source <abc-temp-dir>/abc.script".
-ABC: 
-ABC: + read_blif <abc-temp-dir>/input.blif 
-ABC: + read_lut <abc-temp-dir>/lutdefs.txt 
-ABC: + strash 
-ABC: + ifraig 
-ABC: + scorr 
-ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
-ABC: + dc2 
-ABC: + dretime 
-ABC: + strash 
-ABC: + dch -f 
-ABC: + if 
-ABC: + mfs2 
-ABC: + lutpack -S 1 
-ABC: + dress 
-ABC: Total number of equiv classes                =       2.
-ABC: Participating nodes from both networks       =       2.
-ABC: Participating nodes from the first network   =       1. (  50.00 % of nodes)
-ABC: Participating nodes from the second network  =       1. (  50.00 % of nodes)
-ABC: Node pairs (any polarity)                    =       1. (  50.00 % of names can be moved)
-ABC: Node pairs (same polarity)                   =       1. (  50.00 % of names can be moved)
-ABC: Total runtime =     0.00 sec
-ABC: + write_blif <abc-temp-dir>/output.blif 
-
-2.43.1.2. Re-integrating ABC results.
-ABC RESULTS:              $lut cells:        1
-ABC RESULTS:        internal signals:        0
-ABC RESULTS:           input signals:        1
-ABC RESULTS:          output signals:        1
+Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
+Don't call ABC as there is nothing to map.
 Removing temp directory.
 
 2.44. Executing ICE40_WRAPCARRY pass (wrap carries).
@@ -587,24 +551,19 @@ Successfully finished Verilog frontend.
 
 2.45.2. Continuing TECHMAP pass.
 No more expansions possible.
-Removed 0 unused cells and 2 unused wires.
 
 2.46. Executing OPT_LUT pass (optimize LUTs).
 Discovering LUTs.
-Number of LUTs:        1
-  1-LUT                1
+Number of LUTs:        0
 
 Eliminating LUTs.
-Number of LUTs:        1
-  1-LUT                1
+Number of LUTs:        0
 
 Combining LUTs.
-Number of LUTs:        1
-  1-LUT                1
+Number of LUTs:        0
 
 Eliminated 0 LUTs.
 Combined 0 LUTs.
-<suppressed ~2 debug messages>
 
 2.47. Executing TECHMAP pass (map to technology primitives).
 
@@ -636,14 +595,9 @@ Generating RTLIL representation for module `\$lut'.
 Successfully finished Verilog frontend.
 
 2.47.2. Continuing TECHMAP pass.
-Using template $paramod\$lut\WIDTH=1\LUT=2'01 for cells of type $lut.
 No more expansions possible.
-<suppressed ~14 debug messages>
-Removed 0 unused cells and 2 unused wires.
 
 2.48. Executing AUTONAME pass.
-Renamed 1 objects in module buttontoled (2 iterations).
-<suppressed ~1 debug messages>
 
 2.49. Executing HIERARCHY pass (managing design hierarchy).
 
@@ -665,8 +619,7 @@ Removed 0 unused modules.
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  1
-     SB_LUT4                         1
+   Number of cells:                  0
 
 2.51. Executing CHECK pass (checking for obvious problems).
 checking module buttontoled..
@@ -674,6 +627,6 @@ found and reported 0 problems.
 
 2.52. Executing JSON backend.
 
-End of script. Logfile hash: b367992e67
+End of script. Logfile hash: 4c70d7abea
 Yosys 7f5c73d58fd732a96e480083896cd73c722849ba (Fomu build) (git sha1 66613d5, x86_64-w64-mingw32-g++ 7.3-win32 -Os)
 Time spent: 1% 15x opt_clean (0 sec), 1% 14x opt_expr (0 sec), ...
