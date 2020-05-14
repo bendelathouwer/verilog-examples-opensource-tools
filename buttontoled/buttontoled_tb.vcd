@@ -1,0 +1,51 @@
+$date
+	Wed May 13 21:34:14 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module buttontoled_tb $end
+$var wire 1 ! o_led $end
+$var reg 1 " i_sw $end
+$scope module u1 $end
+$var wire 1 " i_sw $end
+$var wire 1 ! o_led $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1"
+0!
+$end
+#1000
+1!
+0"
+#2000
+0!
+1"
+#3000
+1!
+0"
+#4000
+0!
+1"
+#5000
+1!
+0"
+#6000
+0!
+1"
+#7000
+1!
+0"
+#8000
+0!
+1"
+#9000
+1!
+0"
+#10000
