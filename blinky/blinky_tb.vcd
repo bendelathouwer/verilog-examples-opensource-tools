@@ -1,0 +1,56 @@
+$date
+	Sun May 24 15:22:30 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module blinky_tb $end
+$var wire 1 ! clk_out $end
+$var reg 1 " clk_in $end
+$scope module u1 $end
+$var wire 1 " clk_in $end
+$var wire 1 ! clk_out $end
+$var reg 28 # counter [27:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 #
+0"
+0!
+$end
+#410
+b1 #
+1"
+#820
+0"
+#1230
+b10 #
+1"
+#1640
+0"
+#2050
+b11 #
+1"
+#2460
+0"
+#2870
+b100 #
+1"
+#3280
+0"
+#3690
+b101 #
+1"
+#4100
+0"
+#4510
+b110 #
+1"
+#4920
+0"
+#30000004920
