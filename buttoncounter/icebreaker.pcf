@@ -9,4 +9,7 @@ set_io -nowarn display[5]     48
 set_io -nowarn display[6]     46
 
 #button 
-set_io -nowarn button 10
+set_io -nowarn button         10
+
+#clock
+set_io -nowarn clk           35   
