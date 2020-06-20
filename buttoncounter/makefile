@@ -52,6 +52,3 @@ clean:
 
 .SECONDARY:
 .PHONY: all prog clean
-
-  
-
