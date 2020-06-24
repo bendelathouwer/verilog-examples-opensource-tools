@@ -1,9 +1,9 @@
-module buttoncounter (button, display,clk );
+module buttoncounter (button, display,clk);
 	   
 	  input wire  button   ;
 	  input wire  clk      ;
-	  output [6:0 ] display;
-	  reg	 [14:0] counter;
+	  output reg [6:0 ] display;
+	  reg [14:0] counter;
     always @(posedge clk)
 	  	begin
 	   		if(button == 1)

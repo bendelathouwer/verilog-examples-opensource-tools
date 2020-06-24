@@ -1,0 +1,66 @@
+$date
+	Wed Jun 24 22:02:54 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module buttoncounter_tb $end
+$var wire 7 ! display [6:0] $end
+$var reg 1 " button $end
+$var reg 1 # clk $end
+$var integer 32 $ i [31:0] $end
+$var integer 32 % j [31:0] $end
+$scope module u1 $end
+$var wire 1 " button $end
+$var wire 1 # clk $end
+$var reg 15 & counter [14:0] $end
+$var reg 7 ' display [6:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx '
+bx &
+bx %
+b0 $
+0#
+x"
+bx !
+$end
+#820
+b1111111 !
+b1111111 '
+b1 $
+1#
+#1640
+b10 $
+0#
+#2460
+b11 $
+1#
+#3280
+b100 $
+0#
+#4100
+b101 $
+1#
+#4920
+b110 $
+0#
+#5740
+b111 $
+1#
+#6560
+b1000 $
+0#
+#7380
+b1001 $
+1#
+#8200
+b1010 %
+b1010 $
+0#

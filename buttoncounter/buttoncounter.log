@@ -27,22 +27,6 @@
 1. Executing Verilog-2005 frontend: buttoncounter.v
 Parsing Verilog input from `buttoncounter.v' to AST representation.
 Generating RTLIL representation for module `\buttoncounter'.
-Warning: wire '\display' is assigned in a block at buttoncounter.v:21.18-21.39.
-Warning: wire '\display' is assigned in a block at buttoncounter.v:22.15-22.36.
-Warning: wire '\display' is assigned in a block at buttoncounter.v:23.15-23.36.
-Warning: wire '\display' is assigned in a block at buttoncounter.v:24.15-24.36.
-Warning: wire '\display' is assigned in a block at buttoncounter.v:25.15-25.36.
-Warning: wire '\display' is assigned in a block at buttoncounter.v:26.15-26.36.
-Warning: wire '\display' is assigned in a block at buttoncounter.v:27.15-27.36.
-Warning: wire '\display' is assigned in a block at buttoncounter.v:28.16-28.37.
-Warning: wire '\display' is assigned in a block at buttoncounter.v:29.16-29.37.
-Warning: wire '\display' is assigned in a block at buttoncounter.v:30.15-30.36.
-Warning: wire '\display' is assigned in a block at buttoncounter.v:31.16-31.37.
-Warning: wire '\display' is assigned in a block at buttoncounter.v:32.18-32.39.
-Warning: wire '\display' is assigned in a block at buttoncounter.v:33.18-33.39.
-Warning: wire '\display' is assigned in a block at buttoncounter.v:34.18-34.39.
-Warning: wire '\display' is assigned in a block at buttoncounter.v:35.16-35.37.
-Warning: wire '\display' is assigned in a block at buttoncounter.v:36.21-36.42.
 Successfully finished Verilog frontend.
 
 -- Running command `synth_ice40 -top buttoncounter -json buttoncounter.json' --
@@ -858,7 +842,6 @@ found and reported 0 problems.
 
 2.52. Executing JSON backend.
 
-Warnings: 16 unique messages, 16 total
-End of script. Logfile hash: a10e7f3ab8
+End of script. Logfile hash: 79ef57bf70
 Yosys 7f5c73d58fd732a96e480083896cd73c722849ba (Fomu build) (git sha1 66613d5, x86_64-w64-mingw32-g++ 7.3-win32 -Os)
 Time spent: 1% 17x opt_clean (0 sec), 1% 16x opt_expr (0 sec), ...
