@@ -21,14 +21,13 @@ initial begin
 end
 initial begin
         clk = 0;
-        for( i = 0; i < 10; i = i + 1)
+        for( i = 0; i < 100; i = i + 1)
         begin
-            #82 clk = ~ clk;
+            #41clk = ~ clk;
         end
-        for( j = 0 ; j < 10 ; j = j + 1)
+        for( j = 0 ; j < 100 ; j = j + 1)
         begin
-            button = ~ button;
+            #41 button = ~ button;
         end
-
 end
 endmodule

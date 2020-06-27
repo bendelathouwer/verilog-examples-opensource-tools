@@ -1,16 +1,14 @@
 //`default_nettype none
 `timescale 1ns / 100ps
 module blinky_tb;
+integer j;
  // Inputs
- reg clk_in;
+ wire clk_in;
  // Outputs
- wire clk_out;
+ reg clk_out;
  // Instantiate the Unit Under Test (UUT)
  // Test the clock divider in Verilog
-blinky u1(
-  .clk_in(clk_in), 
-  .clk_out(clk_out)
- );
+blinky u1(.clk_in(clk_in), .clk_out(clk_out));
  
  initial begin 
 	$dumpfile ("blinky_tb.vcd");
@@ -20,17 +18,10 @@ end
   // Initialize Inputs  and also needed for GTKWave
 	clk_in = 0;
   // create input clock 12MHZ
- 
-        
-	#41 clk_in =  ~clk_in;
-	#41 clk_in =  ~clk_in;
-	#41 clk_in =  ~clk_in;
-	#41 clk_in =  ~clk_in;
-	#41 clk_in =  ~clk_in;
-	#41 clk_in =  ~clk_in;
-	
-	#3000000000;
-
+	for(j = 0 ; j < 100; j = j + 1 )
+ 	begin
+		#41 clk_in = ~ clk_in ;
+	end
 end
       
 endmodule
