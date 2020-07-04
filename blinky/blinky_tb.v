@@ -5,7 +5,7 @@ integer j;
  // Inputs
  wire clk_in;
  // Outputs
- reg clk_out;
+ wire clk_out;
  // Instantiate the Unit Under Test (UUT)
  // Test the clock divider in Verilog
 blinky u1(.clk_in(clk_in), .clk_out(clk_out));
@@ -23,5 +23,4 @@ end
 		#41 clk_in = ~ clk_in ;
 	end
 end
-      
 endmodule

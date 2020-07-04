@@ -1,7 +1,6 @@
 PROJ := blinky
 PIN_DEF := C:\Users\Ben\Documents\GitHub\verilog-examples-opensource-tools\blinky\icebreaker.pcf
 DEVICE := up5k
-
 all: $(PROJ).rpt $(PROJ).bin
 
 %.blif: %.v $(ADD_SRC) $(ADD_DEPS)
