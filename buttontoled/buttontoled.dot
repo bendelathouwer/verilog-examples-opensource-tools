@@ -1,0 +1,10 @@
+digraph "buttontoled" {
+label="buttontoled";
+rankdir="LR";
+remincross=true;
+n1 [ shape=octagon, label="i_sw", color="black", fontcolor="black" ];
+n2 [ shape=octagon, label="o_led", color="black", fontcolor="black" ];
+x0 [shape=box, style=rounded, label="BUF", ];
+n1:e -> x0:w [color="black", fontcolor="black", label=""];
+x0:e -> n2:w [color="black", fontcolor="black", label=""];
+}
