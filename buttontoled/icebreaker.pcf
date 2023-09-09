@@ -1,6 +1,0 @@
-
-# RS232
-set_io -nowarn i_sw          10
-set_io -nowarn o_led          37
-
-
