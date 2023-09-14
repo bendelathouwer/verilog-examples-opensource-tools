@@ -1,0 +1,25 @@
+digraph "clockdivider" {
+label="clockdivider";
+rankdir="LR";
+remincross=true;
+n4 [ shape=octagon, label="clk", color="black", fontcolor="black" ];
+n5 [ shape=octagon, label="counterout", color="black", fontcolor="black" ];
+n6 [ shape=octagon, label="o_led", color="black", fontcolor="black" ];
+n7 [ shape=octagon, label="reset", color="black", fontcolor="black" ];
+v0 [ label="1" ];
+c11 [ shape=record, label="{{<p8> A|<p9> B}|$2\n$add|{<p10> Y}}",  ];
+x2 [ shape=record, style=rounded, label="<s0> 7:7 - 0:0 ", color="black", fontcolor="black" ];
+x3 [ shape=record, style=rounded, label="<s0> 7:0 - 7:0 ", color="black", fontcolor="black" ];
+p1 [shape=box, style=rounded, label="PROC $1\nclockdevider.v:7.5-12.8"];
+c11:p10:e -> x3:s0:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n4:e -> p1:w [color="black", fontcolor="black", label=""];
+p1:e -> n5:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n5:e -> c11:p8:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n5:e -> p1:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n5:e -> x2:s0:w [color="black", fontcolor="black", label=""];
+p1:e -> n6:w [color="black", fontcolor="black", label=""];
+n7:e -> p1:w [color="black", fontcolor="black", label=""];
+v0:e -> c11:p9:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+x2:e -> p1:w [color="black", fontcolor="black", label=""];
+x3:e -> p1:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+}
