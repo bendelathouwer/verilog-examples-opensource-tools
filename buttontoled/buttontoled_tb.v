@@ -2,9 +2,13 @@
 module buttontoled_tb(output wire o_led);
     reg i_sw;
     buttontoled UUT (.i_sw(i_sw), .o_led(o_led));
-    always@*// i would asume this is always statment is
+    always@(posedge i_sw)// i would asume this is always statment is
     begin
-       assign i_sw = ~i_sw;
+       assign i_sw = ~ i_sw;
     end     
+    initial begin
+        $dumpfile("buttontoled_tb.vcd");
+        $dumpvars(0,buttontoled_tb);
+    end
  
  endmodule 
