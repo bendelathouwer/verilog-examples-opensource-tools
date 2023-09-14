@@ -1,0 +1,26 @@
+$date
+	Thu Sep 14 16:10:23 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module buttontoled_tb $end
+$var wire 1 ! o_led $end
+$var reg 1 " i_sw $end
+$scope module UUT $end
+$var wire 1 " i_sw $end
+$var reg 1 ! o_led $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+x"
+x!
+$end
