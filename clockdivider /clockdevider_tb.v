@@ -6,6 +6,7 @@ initial begin
     i_reset=~i_reset;
 end 
 always@ (posedge i_clk)
-begin 
+begin
+     
 end 
 endmodule
