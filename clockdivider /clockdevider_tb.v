@@ -11,9 +11,9 @@ module clockdevider_tb(output wire o_led);
         #20
         clk=1;
         #20
-    end 
+    end
     initial begin
-        $dumpfile(" clockdevider_tb.vcb ");
+        $dumpfile("clockdevider_tb.vcd");
         $dumpvars(0,clockdevider_tb);
     end
 endmodule
