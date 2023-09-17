@@ -5,7 +5,7 @@ module clockdevider_tb(output wire o_led);
                       .clk(clk),
                       .couterout(couterout));
 
-    always@*begin
+    always @ * begin 
         reset= ~reset;
         clk=0;
         #20
