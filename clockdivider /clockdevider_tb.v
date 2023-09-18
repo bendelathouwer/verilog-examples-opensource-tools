@@ -1,6 +1,5 @@
 `timescale 1ns/1ps
-`default_nettype none
-
+ `default_nettype none
 module clockdevider_tb(output wire o_led);
     reg clk,rst;
     reg [7:0] couterout;
