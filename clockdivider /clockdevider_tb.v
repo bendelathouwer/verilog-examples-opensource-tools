@@ -3,20 +3,34 @@
 module clockdevider_tb(output wire o_led);
     reg clk,rst;
     wire [7:0] counterout;
+
     clockdivider UUT (.rst(rst), 
                       .clk(clk),
+                      //.outputled(outputled),
                       .counterout(counterout));
+initial begin
+     
+        rst= ~rst; 
+        repeat(100000)
+         clk=0;
+        #20;
+        clk = 1;
+        #20;
+        $dumpfile("clockdevider_tb.vcd");
+        $dumpvars(0,clockdevider_tb);
 
-    always @ * 
+end 
+    /*always @(posedge clk,posedge rst) 
     begin 
-        rst= ~rst;
+       
         clk=0;
         #20;
         clk = 1;
         #20;
+    
     end
     initial begin
         $dumpfile("clockdevider_tb.vcd");
         $dumpvars(0,clockdevider_tb);
-    end
+    end */
 endmodule
