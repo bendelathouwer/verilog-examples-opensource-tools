@@ -7,6 +7,6 @@ module clockdivider(
  begin
      if (rst) counterout <= 0;
      else counterout <= counterout + 1;
-     //assign outputled = couterout[7];
+     assign outputled <= couterout[7];
 end
 endmodule

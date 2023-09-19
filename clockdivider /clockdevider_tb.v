@@ -2,7 +2,7 @@
  `default_nettype none
 module clockdevider_tb(output wire o_led);
     reg clk,rst;
-    reg [7:0] couterout;
+    wire [7:0] counterout;
     clockdivider UUT (.rst(rst), 
                       .clk(clk),
                       .counterout(counterout));
