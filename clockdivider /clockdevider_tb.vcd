@@ -1,5 +1,5 @@
 $date
-	Tue Sep 19 18:34:10 2023
+	Tue Sep 19 20:54:01 2023
 $end
 $version
 	Icarus Verilog
@@ -23,12 +23,15 @@ $enddefinitions $end
 $comment Show the parameter values. $end
 $dumpall
 $end
-#40000
+#0
 $dumpvars
 x&
 bx %
-x$
-1#
+0$
+0#
 bx "
 z!
 $end
+#20000000000000
+1#
+#40000000000000
