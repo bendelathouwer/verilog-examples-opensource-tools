@@ -1,5 +1,5 @@
 $date
-	Tue Sep 19 20:54:01 2023
+	Wed Sep 20 16:43:13 2023
 $end
 $version
 	Icarus Verilog
@@ -8,7 +8,7 @@ $timescale
 	1ps
 $end
 $scope module clockdevider_tb $end
-$var wire 1 ! o_led $end
+$var wire 1 ! outputled $end
 $var wire 8 " counterout [7:0] $end
 $var reg 1 # clk $end
 $var reg 1 $ rst $end
@@ -16,7 +16,7 @@ $scope module UUT $end
 $var wire 1 # clk $end
 $var wire 1 $ rst $end
 $var reg 8 % counterout [7:0] $end
-$var reg 1 & outputled $end
+$var reg 1 ! outputled $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -25,13 +25,12 @@ $dumpall
 $end
 #0
 $dumpvars
-x&
 bx %
-0$
+x$
 0#
 bx "
-z!
+x!
 $end
-#20000000000000
+#2000000
 1#
-#40000000000000
+#4000000
